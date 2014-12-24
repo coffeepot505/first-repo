@@ -157,7 +157,7 @@ toggleclass - to hide/show the text in each blog post
      </div>
 </div>
 
-<script type="text/javascript" src="hhtp://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+<script type="text/javascript">
   $('.blogpost1').on('click',function(){
     $('this').toggleClass('show1');
   });
