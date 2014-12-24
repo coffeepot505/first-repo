@@ -1,0 +1,172 @@
+problems:
+js - toggleclass
+img - not in center
+padding - not equal
+borders - don't curve at the corners
+
+toggleclass - to hide/show the text in each blog post
+
+<!DOCTYPE html>
+<head>
+
+ <style>
+   .lel {
+   	text-align: center;
+    font-family: helvetica, sans-serif;
+   }
+   h1 {
+   	font-size: 35px;
+   	text-align: center;
+   }
+   .blogpost1 {
+   	display: inline-block;
+   	width: 25%;
+    height: 300px;
+    border: 3px solid black;
+   	border-radius: 30px;
+    text-align: justify;
+   	position: relative;
+   	top: 50px;
+   	background: #003399;
+   	color: #FFFFFF;
+   	margin: 20px;
+   	vertical-align: top;
+   	padding: 0 5px 0 5px;
+     transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+   }   
+   .blogpost2 {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: justify;
+    position: relative;
+    top: 50px;
+    background: #003399;
+    color: #FFFFFF;
+    margin: 20px;
+    vertical-align: top;
+    padding: 0 5px 0 5px;
+     transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+   }   
+   .blogpost3 {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: justify;
+    position: relative;
+    top: 50px;
+    background: #003399;
+    color: #FFFFFF;
+    margin: 20px;
+    vertical-align: top;
+    padding: 0 5px 0 5px;
+     transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+   }   
+   .blogpost1 p {
+    font-size: 20px;
+    height: 20px;
+    transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+   }
+   .blogpost1 small {
+    opacity: 0;
+   }
+    .blogpost2 p {
+      font-size: 20px;
+    height: 20px;
+     transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+   }
+   .blogpost2 small {
+    opacity: 0;
+   }
+    .blogpost3 p {
+      font-size: 20px;
+    height: 20px;
+     transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+   }
+   .blogpost3 small {
+    opacity: 0;
+   }
+   img {
+    text-align: center;
+    border: 3px solid white;
+   }
+   h2, h3, h4 {
+     font-size: 25px;
+     text-align: center;
+     color: #CCFFCC;
+   }
+   .show1 p {
+    height: 200px;
+   }
+   .show1 small {
+     opacity: 1;
+   }
+   .show1 {height:700px;}
+   .show2 p {
+    height: 200px;
+   }
+   .show2 small {
+     opacity: 1;
+
+   }
+   .show2 {height:700px;}
+   .show3 p {
+    height: 200px;
+   }
+   .show3 small {
+     opacity: 1;
+   }
+   .show3 {height:700px;}
+ </style>
+</head>
+
+<body>
+
+<div class="lel">
+   <h1>BLOG</h1>
+     <div class="blogpost1">
+     	<h2>Post 1</h2>
+     	 <img src="" height="200" width="200">
+     	 <p><small>blah blah blah kjsbc akdbhzx ajbhghkasjcvguhjnc scagfygkjbahdgyzuhka djgzbxhvgsyauhksjb asgudkhbmefhagskhzjv asgydhkjbfahvgshdkj ajdgkhabfhmgdyhkbamfhgjzuhkdvjfaeh</small></p>
+     </div>
+     <div class="blogpost2">
+     	<h3>Post 2</h3>
+     	 <img src="" height="200" width="200">
+     	 <p><small>blah blah blah vgfcytuijhvgdtrytughjbvh dtfygukjvcgdt dfygukhgd guhdtfykgvh dtcgvgrtd dtryifhjgdr yghvgutrtdgj ukgjhfgytug tdgfhgutyf tdgfryfiyufjhh</small></p>
+     </div>
+     <div class="blogpost3">
+     	<h4>Post 3</h4>
+     	 <img src="" height="200" width="200">
+     	 <p><small>blah blah blah hjbjdc sfgyivkjabds sudkvjbnfc seuidkjn aekudj flidk,nma skdbdnc akdujbnsd kusdjnf aks, seidkjn,m adhkj asudkhj eksudhjmn sekudjmn</small></p>
+     </div>
+</div>
+
+<script type="text/javascript" src="hhtp://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  $('.blogpost1').on('click',function(){
+    $('this').toggleClass('show1');
+  });
+  $('.blogpost2').on('click',function(){
+    $('this').toggleClass('show2');
+  });
+  $('.blogpost3').on('click',function(){
+    $('this').toggleClass('show3');
+  });
+</script>
+
+</body>
